@@ -1,0 +1,84 @@
+<!-- Base code by CodingNepal and modified by me -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    
+    <div class="sheesh"><img id="sheesh" src="images/wizgif4.png"></div>
+    
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Start</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <p>It seems like you've encountered our test. By completing it, you'll win a very interesting reward based on your score.
+            Before you begin, here are some rules:</p>
+        <ol class="info-list">
+            <li class="info">You will only have <span>60 seconds</span> per question.</li>
+            <li class="info">Once you select your answer, it can't be undone.</li>
+            <li class="info">You can't select any option once time goes off.</li>
+            <li class="info">You can't exit from the test while you're doing it.</li>
+        </ol>
+        <div class="buttons">
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="score">
+                <div class="score_txt">Score</div>
+                <div class="userScore"><span id="userScore"></span></div>
+            </div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">60</div>
+            </div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <p>And as promised, click on the link below to get your reward:</p>
+        <button class="complete_rick" onclick="rickroll()">Truth</button>
+        <div class="buttons">
+            <button class="restart" id="1st"></button>
+            <button class="quit" id="2nd"></button>
+        </div>
+    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="js/questions.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
